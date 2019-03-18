@@ -41,6 +41,8 @@ with open(budget_csv, newline='') as budget:
     print(f' Average Change: $ {round(avg_profit_loss_change)}')
     print(f'Greatest Increase:', max_profit_loss_change_date, max_profit_loss_change)
     print(f'Greatest Decrease:', min_profit_loss_change_date, min_profit_loss_change)
+    # increase/decrease still importing value of day that the variance occurred
+    # cannot figure out code to import the value
 
     
 
