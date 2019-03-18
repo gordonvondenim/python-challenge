@@ -44,6 +44,24 @@ with open(budget_csv, newline='') as budget:
     # increase/decrease still importing value of day that the variance occurred
     # cannot figure out code to import the value
 
+#output file
+newfile = os.path.join('..','newfile.txt')
+
+# Open the file using "write" mode. Specify the variable to hold the contents
+with open ('newfile.txt', 'w') as newfile:
+        newfile.write("financial analysis:\n")
+        newfile.write("-------------------------------------\n")
+        newfile.write(f'Total date: {len(date)}\n')
+        newfile.write(f'Total: ${sum(profit_loss)}\n')
+        newfile.write(f'Average Change: $ {round(avg_profit_loss_change)}\n')
+        print(f'Greatest Increase:', max_profit_loss_change_date, max_profit_loss_change, file=newfile)
+        print(f'Greatest Decrease:', min_profit_loss_change_date, min_profit_loss_change, file=newfile)
+
+ 
+
+
+
+
     
 
 
